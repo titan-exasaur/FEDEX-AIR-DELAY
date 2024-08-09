@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: fedex_air_delay
+Version: 0.0.0
+Summary: An e2e data science project
+Home-page: https://github.com/titan-exasau/FEDEX-AIR-DELAY
+Author: titan-exasau
+Author-email: amith2831@gmail.com
+Project-URL: Bug Tracker, https://github.com/titan-exasau/FEDEX-AIR-DELAY/issues
+Description-Content-Type: text/markdown
+
+# An E2E Data Science Project based on FedEx data
+
+1. Create a github repo
+2. Create a project template
+3. Setup logging
+4. Build modules
+5. Build Prediction Pipeline
+6. AWS Deployment
+
