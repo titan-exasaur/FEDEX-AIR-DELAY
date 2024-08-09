@@ -1,0 +1,8 @@
+assets_root: assets
+
+
+data_ingestion:
+  root_dir: assets/data_ingestion
+  source_URL: https://www.kaggle.com/datasets/vasudevmaduri/fedexdata
+  local_data_file: assets/data_ingestion/fedexdata.zip
+  unzip_dir: assets/data_ingestion

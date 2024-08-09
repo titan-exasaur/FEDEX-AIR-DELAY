@@ -6,11 +6,13 @@ src/fedex_air_delay.egg-info/SOURCES.txt
 src/fedex_air_delay.egg-info/dependency_links.txt
 src/fedex_air_delay.egg-info/top_level.txt
 src/fedex_air_delay/components/__init__.py
+src/fedex_air_delay/components/data_ingestion.py
 src/fedex_air_delay/config/__init__.py
 src/fedex_air_delay/config/configuration.py
 src/fedex_air_delay/constants/__init__.py
 src/fedex_air_delay/entity/__init__.py
 src/fedex_air_delay/entity/config_entity.py
 src/fedex_air_delay/pipeline/__init__.py
+src/fedex_air_delay/pipeline/stage_01_data_ingestion.py
 src/fedex_air_delay/utils/__init__.py
 src/fedex_air_delay/utils/common.py

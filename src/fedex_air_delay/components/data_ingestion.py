@@ -19,7 +19,7 @@ class DataIngestion:
 
     def download_file(self):    
         if not os.path.exists(self.config.local_data_file):
-            os.system("kaggle datasets download -d vasudevmaduri/fedexdata -p assets/data_ingestion ")
+            os.system(f"kaggle datasets download -d vasudevmaduri/fedexdata -p {self.config.root_dir}")
             logger.info(f"file downloaded successfully!")
         else:
             logger.info(f"{self.config.local_data_file} already exists")
@@ -31,7 +31,7 @@ class DataIngestion:
         """
         unzip_path = self.config.unzip_dir
         os.makedirs(unzip_path, exist_ok=True)
-        os.system(f"unzip {unzip_path}/fedexdata.zip -d {unzip_path}")
+        os.system(f"unzip {self.config.local_data_file} -d {unzip_path}")
         logger.info(f"extracted {self.config.local_data_file} into {unzip_path}")
 
 
