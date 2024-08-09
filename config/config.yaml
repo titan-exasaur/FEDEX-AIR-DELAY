@@ -6,3 +6,8 @@ data_ingestion:
   source_URL: https://www.kaggle.com/datasets/vasudevmaduri/fedexdata
   local_data_file: assets/data_ingestion/fedexdata.zip
   unzip_dir: assets/data_ingestion
+
+data_validation:
+  root_dir: assets/data_validation
+  unzip_data_dir: assets/data_ingestion/fedex.csv
+  STATUS_FILE: assets/data_validation/status.txt

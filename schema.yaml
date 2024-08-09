@@ -1,1 +1,19 @@
-TEST: 0
+COLUMNS:
+  Year: int64
+  Month: int64
+  DayofMonth: int64
+  DayOfWeek: int64
+  Actual_Shipment_Time: float64
+  Planned_Shipment_Time: int64
+  Planned_Delivery_Time: int64
+  Carrier_Name: object
+  Carrier_Num: int64
+  Planned_TimeofTravel: float64
+  Shipment_Delay: float64
+  Source: object
+  Destination: object
+  Distance: int64
+  Delivery_Status: float64
+
+TARGET_COLUMN:
+  name: Shipment_Delay
