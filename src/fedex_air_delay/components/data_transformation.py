@@ -14,7 +14,13 @@ class DataTransformation:
         data = data.sample(frac=0.01, random_state=234)
         data = data.dropna()
         data = data.drop_duplicates()
-        
+
+        # Identify categorical columns
+        categorical_cols = data.select_dtypes(include=['object']).columns
+
+        # Drop categorical columns
+        data = data.drop(columns=categorical_cols)
+
         train, test = train_test_split(data, test_size=0.2, random_state=42)
 
         train.to_csv(os.path.join(self.config.root_dir, "train.csv"), index=False, header=True)
