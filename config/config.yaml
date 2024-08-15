@@ -11,3 +11,8 @@ data_validation:
   root_dir: assets/data_validation
   unzip_data_dir: assets/data_ingestion/fedex.csv
   STATUS_FILE: assets/data_validation/status.txt
+
+data_transformation:
+  root_dir: assets/data_transformation
+  data_path: assets/data_ingestion/fedex.csv
+
